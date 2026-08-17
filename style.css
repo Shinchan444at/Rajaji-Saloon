@@ -104,7 +104,7 @@ html, body {
     text-overflow: ellipsis;
     padding: 0 10px;
     font-family:  "Segoe UI", "Trebuchet MS", sans-serif;
-    font-size: clamp(3rem, 7vw, 5rem);
+    font-size: clamp(2.5rem, 7vw, 5rem);
     font-weight: 800;
 }
 

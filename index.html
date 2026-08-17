@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajaji Saloon</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+
+    <div id="poster" class="music-bar"> RAJAJI SALOON </div>
+    <!-- Blackout Overlay -->
+    <div id="blackout-screen" class="hidden"></div>
+
+    <!-- Minimal Digital Clock with Blinking Colon -->
+    <div id="digital-clock">
+        <span id="clock-hours">--</span><span class="colon">:</span><span id="clock-minutes">--</span>
+    </div>
+
+    <!-- Floating White Music Bar (~75% from top) -->
+    <div class="music-bar">
+        <div class="song-info">
+            <span id="song-title">Play Song</span>
+        </div>
+
+        <div class="controls-row">
+            <!-- Circular Media Controls -->
+            <div class="main-controls">
+                <button id="prev-btn" class="ctrl-btn nav-btn" title="Previous">⏮</button>
+                <button id="play-btn" class="ctrl-btn play-btn" title="Play/Pause">▶</button>
+                <button id="next-btn" class="ctrl-btn nav-btn" title="Next">⏭</button>
+            </div>
+
+            <!-- Seek Slider -->
+            <div class="seek-container">
+                <span id="current-time">0:00</span>
+                <input type="range" id="seek-bar" value="0" min="0" max="100">
+                <span id="duration">0:00</span>
+            </div>
+
+            <!-- Volume Controls -->
+            <!-- <div class="volume-container">
+                <button id="mute-btn" class="ctrl-btn nav-btn" title="Mute/Unmute">🔊</button>
+                <input type="range" id="volume-bar" value="100" min="0" max="100">
+            </div> -->
+
+        </div>
+    </div>
+
+    <!-- Hidden HTML5 Audio Element -->
+    <audio id="audio-player"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
